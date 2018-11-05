@@ -1,0 +1,35 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on("message", message => {
+
+  // Your commands here
+
+if(message.content === "ping"){
+
+   // the robot answers pong!
+   message.channel.send("Pong!");
+
+};
+// We declare the prefix
+var prefix = '?';
+
+// The robot will answer this if a user does ?Help
+if(message.content.startsWith(prefix + "help")){
+   message.channel.send("You did `?help` to get help.");
+};
+
+if(message.content == "mp") {
+   message.author.send("Here is a private message !")
+};
+
+if (message.content.includes("o.p.p")) {
+    message.channel.send("Yah, you know ME!");
+
+ }
+
+}); // END
+// client.login("NTA5MDQ4NTAyMzQ5OTg3ODYw.DsIJVQ.MIyJPz2aeV699v7ZQAyInUfh3OY");
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
