@@ -2,7 +2,7 @@
 # DiscordWebsocketTutorial
 
 ## Video
-Fuck you Github, fuvk you very much!
+Fuck you Github, fuck you very much!
 ---
 
 ## Used Dependencies
