@@ -30,7 +30,6 @@ if (message.content.includes("o.p.p")) {
  }
 
 }); // END
-// client.login("NTA5MDQ4NTAyMzQ5OTg3ODYw.DsIoyw.41I7I7cFFWeu0hCuqme-hZtqzug");
-//var loginz = "NTA5MDQ4NTAyMzQ5OTg3ODYw.W-B2XA.uVuKXggn3IxEdPSnPZ8Kxl_Frds";
+
 // THIS  MUST  BE  THIS  WAY ... process.env.BOT_TOKEN
-client.login(config.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
